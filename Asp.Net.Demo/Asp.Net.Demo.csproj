@@ -155,6 +155,10 @@
     <Content Include="Site.Master" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ApprovalTests.AspNetMvc\ApprovalTests.AspNetMvc.csproj">
+      <Project>{54AC76FD-207E-417C-84A8-45B2FDBAE16F}</Project>
+      <Name>ApprovalTests.AspNetMvc</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ApprovalTests\ApprovalTests.csproj">
       <Project>{F70C9A76-F797-4167-8178-14821F8634BC}</Project>
       <Name>ApprovalTests</Name>

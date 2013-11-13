@@ -60,12 +60,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="Iesi.Collections">
-      <HintPath>..\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Common\Microsoft.ReportViewer.Common.dll</HintPath>
@@ -73,9 +67,6 @@
     <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Common\Microsoft.ReportViewer.WinForms.dll</HintPath>
-    </Reference>
-    <Reference Include="NHibernate">
-      <HintPath>..\packages\NHibernate.3.3.2.4000\lib\Net35\NHibernate.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore">
       <RequiredTargetFramework>3.0</RequiredTargetFramework>
@@ -93,10 +84,6 @@
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Web.Abstractions" />
-    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
-    <Reference Include="System.Web.Routing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml" />
@@ -109,11 +96,6 @@
     <Compile Include="..\VersionInfo.cs">
       <Link>Properties\VersionInfo.cs</Link>
     </Compile>
-    <Compile Include="Asp\AspApprovals.cs" />
-    <Compile Include="Asp\AspTestingUtils.cs" />
-    <Compile Include="Asp\Mocks.cs" />
-    <Compile Include="Asp\Mvc\MvcApprovals.cs" />
-    <Compile Include="Asp\PortFactory.cs" />
     <Compile Include="Combinations\CombinationApprovals.cs" />
     <Compile Include="Core\IApprovalReporterWithCleanUp.cs" />
     <Compile Include="Core\Approvals.cs" />
@@ -135,12 +117,8 @@
     <Compile Include="Namers\UseApprovalSubdirectoryAttribute.cs" />
     <Compile Include="PdfScrubber.cs" />
     <Compile Include="Persistence\DatabaseApprovals.cs" />
-    <Compile Include="Persistence\EntityFramework\EntityFrameworkApprovals.cs" />
     <Compile Include="Persistence\DataSets\ColumnDefaults.cs" />
     <Compile Include="Persistence\DataSets\DataSetTestingUtilities.cs" />
-    <Compile Include="Persistence\EntityFramework\Version5\DbContextAdaptor.cs" />
-    <Compile Include="Persistence\EntityFramework\Version5\EntityFrameworkDbContextApprovals.cs" />
-    <Compile Include="Persistence\NHibernate\NHibernateApprovals.cs" />
     <Compile Include="Core\ConsoleUtilities.cs" />
     <Compile Include="RdlcReports\RdlcApprovals.cs" />
     <Compile Include="Reporters\AppConfigReporter.cs" />

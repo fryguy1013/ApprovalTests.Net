@@ -44,7 +44,7 @@ namespace ApprovalUtilities.Persistence.NHibernate
 			return formamttedSql;
 		}
 
-		private static ISession GetSession<T>(NhQueryable<T> nhQueryable)
+		private static ISession GetSession<TS>(NhQueryable<TS> nhQueryable)
 		{
 			var queryProvider = nhQueryable.Provider;		
 			return ReflectionUtilities.GetValueForProperty<ISession>(queryProvider, "Session");

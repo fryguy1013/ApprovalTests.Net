@@ -91,6 +91,10 @@
     <Compile Include="DotNet4UtilitiesTest.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ApprovalTests.EntityFramework\ApprovalTests.EntityFramework.csproj">
+      <Project>{2943BC1B-C837-4B83-BC05-3B758C246C98}</Project>
+      <Name>ApprovalTests.EntityFramework</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ApprovalTests\ApprovalTests.csproj">
       <Project>{F70C9A76-F797-4167-8178-14821F8634BC}</Project>
       <Name>ApprovalTests</Name>

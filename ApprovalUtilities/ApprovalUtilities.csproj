@@ -37,12 +37,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Iesi.Collections">
-      <HintPath>..\packages\Iesi.Collections.3.2.0.4000\lib\Net35\Iesi.Collections.dll</HintPath>
-    </Reference>
-    <Reference Include="NHibernate">
-      <HintPath>..\packages\NHibernate.3.3.2.4000\lib\Net35\NHibernate.dll</HintPath>
-    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -71,17 +65,10 @@
     <Compile Include="Persistence\Database\DatabaseUtils.cs" />
     <Compile Include="Persistence\Database\SqlLoader.cs" />
     <Compile Include="Persistence\Database\SqlLoaderUtils.cs" />
-    <Compile Include="Persistence\EntityFramework\EntityFrameworkLoader.cs" />
-    <Compile Include="Persistence\EntityFramework\EntityFrameworkLoadersExtensions.cs" />
-    <Compile Include="Persistence\EntityFramework\LambdaEnumerableLoader.cs" />
-    <Compile Include="Persistence\EntityFramework\LambdaSingleLoader.cs" />
-    <Compile Include="Persistence\EntityFramework\Loaders.cs" />
-    <Compile Include="Persistence\EntityFramework\ObjectContextAdaptor.cs" />
     <Compile Include="Persistence\IExecutableQuery.cs" />
     <Compile Include="Persistence\LambdaLoader.cs" />
     <Compile Include="Persistence\Loader.cs" />
     <Compile Include="Persistence\MockSaver.cs" />
-    <Compile Include="Persistence\NHibernate\NhQueryableAdaptor.cs" />
     <Compile Include="Reflection\CallbackDescriptor.cs" />
     <Compile Include="Reflection\HandlerListEntry.cs" />
     <Compile Include="Reflection\HandlerListHelper.cs" />
